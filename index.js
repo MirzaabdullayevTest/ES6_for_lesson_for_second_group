@@ -91,13 +91,10 @@ function
 //  =================================== array
 
 // let arr = ['Tom', 25, { who: 'dev', salary: 45000 }]
-
 // let [name, age, { who: value }] = arr
-
 // console.log(value);
 
 // =================================> assetsatsivniy massivlar
-
 // let arr = [
 //     { name: 'Tom', age: 50 },
 //     { name: 'Karl', age: 30 },
@@ -114,5 +111,149 @@ function
 
 // console.log(val);
 
-const arr = ['Kim', 50]
-console.log(arr);
+// const arr = ['Kim', 50]
+// console.log(arr);
+
+// const person = {
+//     name: 'Tom',
+//     age: 50,
+//     number: 998978
+// }
+
+// const { name, age, number } = person
+
+// // console.log('Name: ' + person.name + ' ' + 'Age: ' + person.age + ' ' + 'Number: ' + person.number);
+// console.log(`Name ${person.age}   Age: ${person.age}   Number: ${person.number}`);
+
+// spread operatori -------------------------
+// const arr = [1, 5, 6, 8]
+
+// console.log(...arr);
+
+// arr.forEach((val, index) => {
+//     console.log(index);
+// })
+
+// const arr = [1, 5, 6, 8, 9, 65, 95]
+
+// const sum = (a, b, c, ...rest) => {
+//     return rest
+// }
+
+// const calc = sum(...arr)
+// console.log(calc);
+
+//////////////////rest ===========
+
+// const person = {
+//     name: 'Tom',
+//     age: 50,
+//     number: 998978
+// }
+
+// const { name, ...rest } = person
+
+// console.log(rest);
+
+// const person = {
+//     name: 'Tom',
+//     surname: 'Jack',
+//     age: 60
+// }
+
+// const public = {
+//     gender: 'man',
+//     number: 99898,
+//     job: 'Dev'
+// }
+
+// const common = { ...person, ...public }
+
+// const {number} = common
+
+// console.log(number);
+
+// Class ======================
+// function Car(marka){
+//     this.marka = marka
+//     console.log(this.marka);
+// }
+
+// const car = new Car('Ford')
+
+// class Car {
+//     constructor(marka) {
+//         this.marka = marka
+//     }
+
+//     logger() {
+//         console.log(this.marka);
+//     }
+// }
+
+// const car = new Car('BWM')
+
+// class Ford extends Car{
+//     log(){
+//         console.log('Hello');
+//     }
+// }
+
+// const ford = new Ford('Mazda')
+
+// ford.logger()
+
+// --------------------- default parametr
+/* const createPost = (user, message = 'Default message', date = new Date().toLocaleDateString()) => {
+    return {
+        user,
+        message,
+        // date: date || new Date().toLocaleDateString()
+        date
+    }
+}
+
+const post = createPost('Edy')
+
+console.log(post); */
+
+// ==================== map
+// const arr = [1, 2, 6, 5, 8, 9]
+
+// arr.map((val, index) => {
+//     console.log(index);
+// })
+
+// const fil = arr.filter((val, index) => {
+//     if (val % 2 === 0) {
+//         return true
+//     }
+//     else {
+//         return false
+//     }
+// })
+
+// console.log(fil);
+
+// const users = [
+//     { name: 'Tom', age: 30, job: true },
+//     { name: 'Lady', age: 20, job: true },
+//     { name: 'Harry', age: 60, job: false },
+//     { name: 'Jack', age: 10, job: false },
+// ]
+
+// const adult = users.filter((val, index) => {
+//     if (!val.job) {
+//         return true
+//     }
+//     else {
+//         return false
+//     }
+// })
+
+// console.log(adult);
+
+// 
+/*
+    Client -> Server -> DataBase -> Server -> Client
+*/
